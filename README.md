@@ -37,3 +37,19 @@ This migration preserves the current call-to-book experience. Online bookings, a
 Before adding them, choose a booking provider or a custom backend. A custom system needs persistent appointment storage, server-side availability/conflict checks, staff authentication and access controls, plus confirmed service durations, prices and working hours. Use the salon's Australia/Brisbane timezone. Keep privileged credentials on the server, never in the browser bundle.
 
 Add booking pages alongside `HomePage` once that scope is agreed. The service data is separated from the presentation so it can be connected to a future catalogue or API.
+
+## GitHub Pages
+
+Repository: https://github.com/Johncute123/LuxNails
+
+The Git repository starts in this `site` directory, not its parent. On GitHub, `package.json` and `src/` therefore appear at the repository root.
+
+The workflow in `.github/workflows/pages.yml` builds and deploys pushes to `main`. Pages must use **GitHub Actions** as its publishing source.
+
+```sh
+npm run build:pages
+```
+
+This build uses `/LuxNails/` as its base, including logo and photo URLs. The normal `npm run build` retains `/` for the existing root-hosted site. The expected GitHub Pages address is https://johncute123.github.io/LuxNails/.
+
+GitHub Pages hosts the frontend only. Future online bookings will need a separate booking service or backend.
