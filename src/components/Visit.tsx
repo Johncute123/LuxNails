@@ -1,0 +1,5 @@
+import { salon } from "../data/salon";
+
+export function Visit() {
+  return (<section className="visit section" id="visit"><div className="visit-copy"><p className="eyebrow">MAKE TIME FOR YOURSELF</p><h2>Your little escape,<br /><em>on Cavill Avenue.</em></h2><p>Find us inside Paradise Centre, right in the heart of Surfers Paradise. Pair your next visit with a day by the beach, a little shopping, or simply a moment to yourself.</p><address>Paradise Centre, Shop 42<br />2 Cavill Avenue<br />Surfers Paradise QLD 4217</address><a className="button" href={salon.directionsUrl} target="_blank" rel="noopener noreferrer">Get directions</a></div><div className="contact-card"><span className="card-star" aria-hidden="true">✧</span><p className="eyebrow">YOUR NEXT SET STARTS HERE</p><h3>Let's make<br />it a Lux day.</h3><p>Call us to book a treatment or ask about our services and opening hours.</p><a className="phone" href={salon.phoneHref}>{salon.phone}</a><a className="button light" href={salon.phoneHref}>Call to book</a></div></section>);
+}

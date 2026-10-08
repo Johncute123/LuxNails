@@ -1,0 +1,5 @@
+import { salon } from "../data/salon";
+
+export function Hero() {
+  return (<section className="hero" id="home"><div className="hero-copy"><p className="eyebrow">NAIL & BEAUTY SALON · GOLD COAST</p><h1>Your nails.<br />Your moment.<br /><em>A little Lux.</em></h1><p className="intro">A fresh set. A favourite shade. Time just for you.<br />Find your finishing touch at Lux Nails.</p><div className="hero-actions"><a className="button" href={salon.phoneHref}>Call to book</a><a className="text-link" href="#services">Explore our services</a></div><div className="hero-address"><span className="line-icon" aria-hidden="true">⌖</span><p>Paradise Centre, Surfers Paradise<br /><span>Shop 42 · 2 Cavill Avenue</span></p></div></div><div className="hero-art" id="hero-art"><img src="/assets/manicure.jpg" alt="Editorial inspiration: burgundy almond-shaped nails against ivory silk" width="1024" height="1280" fetchPriority="high" /><div className="image-caption"><span>THE FINISHING TOUCH</span><span>01 / LUX NAILS</span></div><span className="hero-seal" aria-hidden="true">A MOMENT<br />FOR YOU<br />✧</span></div></section>);
+}
